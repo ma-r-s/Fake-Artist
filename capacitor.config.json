@@ -1,0 +1,6 @@
+{
+	"appId": "com.fake.artist",
+	"appName": "Fake Artist",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Fake Artist</string>
+    <string name="title_activity_main">Fake Artist</string>
+    <string name="package_name">com.fake.artist</string>
+    <string name="custom_url_scheme">com.fake.artist</string>
+</resources>
