@@ -1,5 +1,11 @@
 <script>
+	import { playersStore, fakeArtistStore } from '$lib/stores.js';
 	let players = 5;
+	const createGame = () => {
+		//Set the fake artist to a random player
+		fakeArtistStore.set(Math.floor(Math.random() * players));
+		playersStore.set(players);
+	};
 </script>
 
 <div class="w-full min-h-screen flex flex-col items-center justify-center">
@@ -32,5 +38,5 @@
 			<p class="btn aspect-square text-xl">X</p>
 		{/if}
 	</div>
-	<button class="btn btn-primary m-2">Play</button>
+	<a href="/topics" on:click={createGame} class="btn btn-primary m-2 text-xl">Play</a>
 </div>
